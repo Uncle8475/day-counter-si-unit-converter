@@ -9,8 +9,16 @@ function calculateDays() {
 
     const timeDiff = Math.abs(end.getTime() - start.getTime());
     const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+   const year=Math.floor(daysDiff/365);
+   const remainingDays = daysDiff % 365;
 
-    document.getElementById('result').innerText = `Number of days between the dates: ${daysDiff} days`;
+   
+    const months = Math.floor(remainingDays / 30);
+
+    
+    const days = remainingDays % 30;
+
+    document.getElementById('result').innerText = `${daysDiff} days is approximately ${year} years, ${months} months, and ${days} days.`;
 }
 function convertMass() {
     const massInput = parseFloat(document.getElementById('massInput').value);
@@ -33,6 +41,9 @@ function convertMass() {
 
     document.getElementById('resultt').innerText = `Result: ${result} ${unitTo}`;
 }
+
+
+
 
 
 
