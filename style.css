@@ -50,7 +50,7 @@ button:hover {
 p {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
     margin-top: 15px;
 }
 
@@ -71,6 +71,7 @@ p {
 .container2 label {
     display: block;
     margin-top: 10px;
+    color: black;
 }
 
 .container2 input, select {
