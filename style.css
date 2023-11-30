@@ -71,6 +71,7 @@ p {
 .container2 label {
     display: block;
     margin-top: 10px;
+    color: black;
 }
 
 .container2 input, select {
